@@ -1,0 +1,117 @@
+:root {
+  --color-1: 210deg 100% 85%;
+  --color-2: 224deg 100% 70%;
+  --color-3: 210deg 100% 60%;
+  --color-4: 224deg 100% 50%;
+}
+
+@keyframes aurora-border {
+  0% {
+    transform: translateY(-100%) translateX(100%) rotate(45deg);
+  }
+  100% {
+    transform: translateY(0) translateX(0) rotate(45deg);
+  }
+}
+
+@keyframes aurora-2 {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes aurora-4 {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+body, html, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.driver-overlay {
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.driver-popover {
+  background-color: white;
+  color: #333;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+.driver-popover-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.driver-popover-description {
+  margin-bottom: 10px;
+}
+
+.driver-popover-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.driver-popover-progress-text {
+  font-size: 12px;
+  color: #666;
+}
+
+.driver-popover-navigation-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.driver-popover-btn-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.driver-popover-prev-btn, .driver-popover-next-btn {
+  padding: 5px 10px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.driver-popover-next-btn {
+  background-color: #4D6BFE;
+  color: white;
+}
+
+.driver-popover-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.driver-popover-arrow-side-left {
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  left: -10px;
+  top: 10px;
+}
