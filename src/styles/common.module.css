@@ -1,0 +1,39 @@
+/* 通用滚动条样式 */
+.scrollbar {
+  /* Chrome、Safari、Edge */
+  &::-webkit-scrollbar {
+    width: 6px; /* 竖向滚动条宽度 */
+    height: 6px; /* 横向滚动条高度 */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent; /* 轨道背景透明 */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15); /* 滚动条颜色 */
+    border-radius: 6px; /* 圆角 */
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+}
+
+/* 卡片容器样式 */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  overflow: hidden;
+}
+
+/* 内容区域样式 */
+.content {
+  padding: 16px;
+}
+
+/* 动画过渡效果 */
+.transition {
+  transition: all 0.3s ease;
+}

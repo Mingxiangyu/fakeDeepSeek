@@ -1,0 +1,25 @@
+.dialog {
+  border-left: 2px transparent solid;
+  transition: all 0.2s ease;
+
+  .icon {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  &.tour,
+  &:hover {
+    border-left-color: #1677ff;
+    background-color: rgba(0, 0, 0, 0.01);
+
+    .icon {
+      opacity: 1;
+    }
+  }
+
+  &.tour {
+    pointer-events: none;
+    user-select: none;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  }
+}
